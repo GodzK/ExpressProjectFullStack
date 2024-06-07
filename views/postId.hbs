@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> baseHead customTitle=customTitle}}
+</head>
+<body>
+    {{> sideHeader}}
+    {{#if onePost}} 
+    <div style="background-color: blueviolet;">
+    <h2>{{onePost.title}}</h2>
+    <p><span>{{onePost.from}}</span>
+    <span>{{onePost.created}}</span>
+    </p>
+   </div>
+   {{else}}
+   <p>Cant find the post</p>
+    {{/if}}
+  
+    {{> sideFooter}}
+</body>
+</html>
